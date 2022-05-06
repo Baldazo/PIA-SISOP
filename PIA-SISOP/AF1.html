@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad Fundamental 1</title>
+  <linkk rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="main-menu">
+    <div class="main-menu-form">
+      <div class="main-menu-btn"><i class="fa fa-bars"></i></div>
+    </div>
+    <div class="main-menu-content">
+      <!-- main logo -->
+      <div class="main-menu-logo">
+        <h2>¿A donde quieres ir?</h2>
+      </div>
+      <!-- navigation -->
+      <ul class="main-menu-nav">
+        <li>
+          <a href="index.html" class="orange">
+            <i class="fa fa-home fa-fw"></i>&nbsp; Inicio</a>
+        </li>
+        <li>
+          <a href="Windows1.html" class="red">
+            <i class="fa fa-users fa-fw front"></i>&nbsp; Puntos importantes
+            de Windows</a>
+        </li>
+        <li>
+          <a href="AF1.html" class="yellow">
+            <i class="fa fa-book fa-fw front"></i>&nbsp; Arquitectura&nbsp;<b>AF1</b></a>
+        </li>
+        <li>
+          <a href="AF2.html" class="green">
+            <i class="fa fa-folder fa-fw"></i>&nbsp; Multitarea&nbsp;<b>AF2</b></a>
+        </li>
+        <li>
+          <a href="AF3.html" class="purple">
+            <i class="fa fa-envelope fa-fw"></i>&nbsp; Almacenaje,
+            Memoria&nbsp;<b>AF3</b></a>
+        </li>
+        <li>
+          <a href="AF4.html" class="red">
+            <i class="fa fa-users fa-fw"></i>&nbsp; Redes y Seguridad&nbsp;<b>AF4</b></a>
+        </li>
+      </ul>
+      <a href="#" class="main-menu-close">
+        <i class="fa fa-close"></i>&nbsp; Cerrar menú</a>
+    </div>
+  </div>
+  <div class="contededor">
+    <header class="header">
+      <div class="menu">
+        <nav>
+          <a href="#Introduccion">Introducción</a>
+          <a href="#Sistema">Sistema Operativo</a>
+          <a href="#Tabla">Tabla comparativa</a>
+          <a href="#Componentes">Componentes</a>
+          <a href="#Clasificacion">Clasificación</a>
+          <a href="#Glosario">Glosario</a>
+        </nav>
+        <nav>
+          <a href="#Partes">Partes de un SO</a>
+          <a href="#Partes1">Partes de Gestión</a>
+          <a href="#PC">SO para PC y Móviles</a>
+          <a href="#Categorias">Categorías</a>
+          <a href="#Investigacion">Investigación</a>
+          <a href="#Conclusion">Conclusión</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!--Aquí comienza el desarrollo-->
+  <div class="contenido">
+    <h1 class="titulo">Arquitectura, desempeños y tipos de un sistema operativo</h1>
+    <br><br>
+    <div id="Introduccion" class="contenido-texto">
+      <p>
+      <h1>Introducción</h1><br>
+      En esta actividad fundamental veremos todo lo relacionado a los Sistemas operativos, desde su historia, hasta las
+      funciones que pueden tener en nuestros dispositivos, ya sea en PC o Móviles.<br>
+      Un Sistema operativo es un programa que administra el hardware de una computadora. También proporciona las bases
+      para los programas de aplicación, y actúa como intermediario entre el usuario y el hardware. Estas tareas, pueden
+      ser llevadas a cabo de varias formas, lo que permite que algunos sistemas Operativos se diseñen para ser
+      prácticos, otros eficientes y otros para ser ambas cosas.<br>
+      Dado que un sistema operativo es un software grande y complejo, debe crearse pieza por pieza. En este curso
+      veremos, entre otras cosas, una introducción a los principales componentes de un sistema operativo.
+      <div class="contenido-img">
+        <img src="img/SistemasOp.png" alt="">
+      </div>
+      </p>
+    </div>
+  </div>
+  <div id="Sistema" class="contenido">
+    <div class="contenido-textoo">
+      <p>
+      <h2>¿Qué es un sistema operativo? </h2><br>
+      La expresión sistema operativo o el término en inglés Operating System (OS) es un término general para programas
+      (software del sistema) que hacen posible el funcionamiento de una computadora. Controla y supervisa la interacción
+      de los componentes de hardware en el contexto del orden, los datos, la memoria y la gestión de programas.<br>
+      Es el software más importante y esencial, porque este nos permite usar el dispositivo y darle órdenes para que
+      ejecute lo que necesitamos. Es muy importante para que nosotros podamos interactuar con el equipo o dispositivo,
+      ya que sin un sistema operativo sería inútil, ya que no tendríamos la plataforma que permite realizar la
+      interacción humano-computadora.
+      </p>
+    </div>
+  </div>
+  <!--Contenido 2-->
+  <div class="contenido2">
+    <div id="Tabla">
+      <h2>Cuadro comparativo entre sistemas operativos</h2>
+      <table class="comparativo">
+        <tr>
+          <th>Windows<br><img src="img/Windows.png"></th>
+          <th>Android<br><img src="img/Android.png"> </th>
+          <th>MS-DOS<br><img src="img/MSDOS.jpg"></th>
+          <th>Unix<br><img src="img/Unix.png"></th>
+          <th>MacOS<br><img src="img/MacOS.png"></th>
+          <th>Linux<br><img src="img/Linux.png"></th>
+        </tr>
+        <tr>
+          <td>Sencillo, rápido y atractivo.</td>
+          <td>Se utiliza en los dispositivos móviles inteligentes.</td>
+          <td>Sistema operativo no gráfico.</td>
+          <td>Sistema operativo multiusuario.</td>
+          <td>Exclusivo para computadoras de Apple.</td>
+          <td>Es un sistema operativo libre: gratuito y modificable.</td>
+        </tr>
+        <tr>
+          <td>Ejecución de programas fácil.</td>
+          <td>Es de código abierto, multitarea.</td>
+          <td>Se fue actualizando con el paso de los años.</td>
+          <td>Facilidad de crear programas y sistemas.</td>
+          <td>Rendimiento de terminales es superior.</td>
+          <td>Tiene como base de sistema a UNIX.</td>
+        </tr>
+        <tr>
+          <td>Interfaz gráfica.</td>
+          <td>Su interfaz es lo que se ve en la pantalla.</td>
+          <td>Interfaz de línea de comandos.</td>
+          <td>Se maneja por interfaz de comandos.</td>
+          <td>Mejor interfaz gráfica del mercado.</td>
+          <td>Interfaz de comandos sencilla.</td>
+        </tr>
+        <tr>
+          <td>Incluye Internet Explorer y cuenta con Microsoft Office.</td>
+          <td>Navegador basado en WebKit incluido.</td>
+          <td>Permite un usuario y una sola tarea.</td>
+          <td>Lenguaje de comandos: Shell.</td>
+          <td>Safari es su propio navegador web.</td>
+          <td>Cuenta con su programa Libre Office.</td>
+        </tr>
+        <tr>
+          <td>Requerimientos del sistema son mínimos.</td>
+          <td>Las apps pueden ser reemplazadas.</td>
+          <td>Requerimientos del sistema mínimos.</td>
+          <td>Fácil adaptación según requerimientos.</td>
+          <td>Poco software para este SO.</td>
+          <td>Estructura basada en un micronúcleo híbrido.</td>
+        </tr>
+        <tr>
+          <td>Programas y apps que facilitan su uso.</td>
+          <td>Actualizaciones desde su liberación inicial.</td>
+          <td>Tuvo ocho versiones principales.</td>
+          <td>Diversas variantes y se considera potente.</td>
+          <td>Versiones variables al año de creación.</td>
+          <td>Tiene algunas variantes (distribuciones).</td>
+        </tr>
+      </table>
+    </div>
+    <br><br>
+    <div class="alineacionizq">
+      <h3 id="Componentes">Componentes del sistema operativo y funciones</h3>
+      <p>
+        Los diferentes elementos del sistema operativo están estrechamente relacionados. Las partes de un sistema
+        operativo comprende un conjunto de acciones que se llevan a cabo en una computadora. Los componentes del sistema
+        operativo de los que estaremos hablando son:
+      <ul class="viñetas">
+        <li> <b>Los procesos:</b> Cuando se habla de un proceso se hace referencia a un programa en ejecución. Un
+          proceso es un conjunto de instrucciones que corresponden a un programa y que son ejecutadas por la CPU. En un
+          programa se pueden ejecutar uno o varios procesos diferentes.</li>
+        <li> <b>La memoria principal:</b> es un recurso muy importante que se ha de gestionar
+          cuidadosamente para agilizar la ejecución de los procesos. Ante un fallo de energía eléctrica, como la memoria
+          principal es volátil se pierde su contenido.</li>
+        <li> <b>El almacenamiento secundario:</b> representa otro de los componentes de un sistema operativo y no es más
+          que un espacio reservado en los discos con el objetivo de almacenar los programas que no necesitan estar en la
+          memoria principal y para el intercambio de losprogramas desde y hacia la memoria principal.</li>
+        <li> <b>El sistema de entrada/salida:</b> representa el intercambio de información entre el procesador y los
+          dispositivos periféricos (teclado, mouse, pantalla, impresora y otros). Los dispositivos periféricos solicitan
+          recursos del sistema por medio de interrupciones.</li>
+        <li><b>El sistema de archivos:</b> Los archivos representan un conjunto de información almacenada en los discos
+          de una PC. Dicha información se almacena de forma relacionada y organizada. Los archivos almacenan tanto los
+          programas como los datos.</li>
+        <li><b>Los sistemas de protección:</b> es uno de los componentes del sistema operativo que proporciona el
+          mecanismo que controla el acceso de los programas o los usuarios a los recursos del sistema. El sistema
+          operativo se encarga de distinguir entre uso autorizado y no autorizado, especificar los controles de
+          seguridad a realizar y forzar el uso de los mecanismos de protección.</li>
+        <li><b>El sistema de comunicaciones:</b> permite el intercambio de información entre procesos y
+          programas que se ejecutan localmente con procesos y programas que se ejecutan de forma remota.</li>
+        <li><b>Los programas del sistema:</b> Son aplicaciones que se instalan con el sistema operativo pero que no
+          forman parte de él. Los programas del sistema son útiles para el desarrollo y ejecución de los programas de
+          usuario.</li>
+        <li><b>El gestor de recursos:</b> El sistema operativo administra la unidad central de procesamiento, los
+          dispositivos de entrada y salida, la memoria principal o memoria RAM, los discos o memoria virtual, los
+          procesos o programas en ejecución y en general todos los recursos del sistema.</li>
+      </ul>
+      </p>
+    </div>
+
+    <br id="Clasificacion">
+    <h3>Clasificación de los sistemas por el número de usuarios</h3>
+    <p class="contenido-textoo"><b>Monousuario:</b> Soportan un solo usuario. <br>
+      <b>Multiusuario:</b> Servicio a múltiples usuarios al mismo tiempo.
+    </p>
+    <br id="Glosario">
+    <h3>Glosario de terminología</h3>
+    <p>
+    <ol class="Listanumerada">
+      <li> <b>Archivo:</b> Son documentos computacionales que contienen información como texto, imágenes, sonidos,
+        vídeos,
+        etc.
+      <li><b> Base de datos:</b> Estructura de Software que colecciona información muy variada de diferentes personas y
+        cosas,
+        cada una de la cuales tiene algo en común.</li>
+      <li><b>Bit:</b> Es la sigla del inglés Binary Digit (dígito binario) y representa la unidad mínima de información
+        posible,
+        ya que equivale a un golpe de corriente con un valor que puede ser uno (que equivale a encendido) o bien cero
+        (apagado).</li>
+      <li> <b>Browser:</b> Es un programa que se usa para navegar por el web, es algo así como un paginado que permite
+        pasar
+        páginas.</li>
+      <li><b> Buffer:</b> Es un espacio de memoria que se utiliza como regulador y sistema de almacenamiento de
+        intermedio
+        entre
+        dispositivos de un sistema informático.</li>
+      <li><b>Byte:</b> Es una unidad de información a 8 bits, un carácter que puede ser un número, símbolo o una letra.
+      </li>
+      <li><b>Compatibilidad:</b> Es la habilidad de usar sistemas y dispositivos de una computadora en otra, sin
+        requerir
+        cambios.</li>
+      <li><b>Compilador:</b> Es un programa traductor que genera lenguaje de maquina a partir de un lenguaje de
+        programación de
+        alto nivel basado en el lenguaje humano.</li>
+      <li><b>Computador análogo:</b> Es un computador que trabaja con señales visuales o acústicas que se convierten en
+        una
+        tensión eléctrica variable, que se puede reproducir directamente a través de altavoces o almacenar en una cinta
+        o
+        disco.</li>
+      <li><b>Computador digital:</b> Es un ordenador que se utiliza, contiene y manipula información convertida al
+        código
+        binario, el lenguaje de números o lenguaje de máquina que emplean los ordenadores para almacenar y manipular los
+        datos.</li>
+      <li><b> Computador:</b> Es un dispositivo electrónico capaz de recibir un conjunto de instrucciones y ejecutarlas
+        utilizando cálculos sobre los datos numéricos o bien compilando y correlacionando otros tipos de información.
+      </li>
+      <li> <b>Download:</b> Es la operación de bajar o descargar desde un sitio web (ordenador remoto) determinada
+        información
+        hasta nuestro PC.</li>
+      <li> <b>Ensamblador:</b> Es un lenguaje de programación de medio nivel, el cual es traducible directamente a
+        lenguaje
+        de
+        máquina.</li>
+      <li> <b>Escáner:</b> Es un periférico de entrada de datos (texto impreso o imágenes), su función es capturar estos
+        datos y
+        transmitirlos al ordenador para su posterior manipulación.</li>
+      <li> <b> Graficado:</b> Es un programa que permite crear y manipular imágenes de ilustraciones en el computador.
+      </li>
+      <li> <b>Hardware:</b> Son todos aquellos componentes físicos de una computadora, todo lo visible y tangible.</li>
+      <li><b> Impresora:</b> Es un periférico del ordenador diseñado para copiar en un soporte duro
+        (papel, acetato, etc.), texto e imágenes en color blanco o negro.</li>
+      <li> <b>Informática:</b> Es la ciencia del tratamiento automático y racional de la información, considerada como
+        soporte
+        de los conocimientos y comunicaciones, a través de los ordenadores.</li>
+      <li> <b>Interfaz:</b> Es la conexión entre dos componentes de Hardware, entre dos aplicaciones o entre un usuario
+        y
+        una
+        aplicación.</li>
+      <li> <b>Internet:</b> Es una red informática a nivel mundial que utiliza la línea telefónica para
+        transmitir la información.</li>
+      <li> <b>Java:</b>E s un lenguaje desarrollado por Sun Microsystemas para la elaboración de
+        aplicaciones exportables a la red y capaces de operar sobre cualquier plataforma a través, normalmente, de
+        visualizadores www.</li>
+      <li> <b>Lenguaje de Programación:</b> Es un conjunto de sentencias utilizadas para escribir secuencias de
+        instrucciones
+        para ser ejecutadas e una computadora.</li>
+      <li> <b>Lenguaje maquina:</b> Son aquellas que basadas en secuencia de ceros y unos (código binario), son
+        entendibles
+        directamente por el ordenador y por lo tanto ejecutables sin necesidad de traducción.</li>
+      <li><b> Linux:</b> Es un Sistema Operativo que actúa como servicio de información entre el Hardware y el Software.
+      </li>
+      <li> <b>Mac OS:</b> Es el nombre del Sistema Operativo creado por Apple para su línea de computadoras Macintosh.
+      </li>
+      <li> <b> Máquina virtual:</b> Se trata de un tipo de Sistema Operativo que presentan una interfaz a cada proceso,
+        mostrando
+        una máquina que aparece idéntica a la maquina real subyacente.</li>
+      <li> <b>Memoria RAM:</b> Es un dispositivo donde se guardan datos en forma temporal.</li>
+      <li> <b> Microsoft Windows:</b> Es el nombre de una familia de Sistemas Operativos desarrollados por Microsoft
+        desde
+        1981.</li>
+      <li> <b>Módem: </b>Es un aparato que conecta al computador con la línea telefónica.</li>
+      <li> <b>Mouse: </b>Es un pequeño dispositivo de entrada con uno o más botones incorporados, que se utilizan con
+        las
+        interfaces gráficas del usuario.</li>
+      <li> <b> Multiprogramación:</b> Es la capacidad de correr (ejecutar) más de un programa de manera simultánea.</li>
+      <li> <b> Operador: </b>En programación se llaman operadores a todos los símbolos, esto es, que no son números ni
+        letras.</li>
+      <li> <b> Operadores aritméticos: </b>En programación son todos los símbolos que se utilizan en matemática.</li>
+      <li> <b>Operadores de comparación: </b>Son símbolos que se usan para comparar valores de variables en
+        programación.
+      </li>
+      <li> <b> Página web:</b> Es un documento dentro de un sitio de internet que contiene información.</li>
+      <li> <b> Procesador de texto:</b> Es un programa que permite la manipulación de texto con formato y que permite
+        generar
+        archivos que conserva el estilo realizado.</li>
+      <li> <b>Proceso: </b>Es una operación o conjunto combinado de operaciones con datos, o bien una secuencia de
+        acontecimientos definida, única y delimitada.</li>
+      <li> <b>Programa: </b>Es un conjunto de instrucciones ordenados correctamente que permiten realizar una tarea o
+        trabajo
+        específico.</li>
+      <li> <b>Red:</b> Es un conjunto de computadores que están unidos entre si, a través de elementos de
+        comunicaciones,
+        pueden
+        ser permanentes, o bien temporales, como enlaces telefónicos.</li>
+      <li> <b>Sistema:</b> Es cualquier conjunto de dispositivos que colaboran en la realización de una tarea.</li>
+      <li> <b>Sistemas Operativos:</b> Es un conjunto de programas que controlan los procesos básicos de una computadora
+        y
+        permiten el funcionamiento de otros programas.</li>
+      <li> <b>Software de Sistemas:</b> Es aquel que está orientado a la manipulación y control directo del Hardware
+        mediante
+        una serie de rutinas especializadas.</li>
+      <li><b> Software Libre:</b> Es la denominación del Software que respeta la libertad de todos los usuarios que
+        adquirieron
+        el producto y, por tanto, una vez obtenido el mismo puede ser usado, copiado, estudiado, modificado y
+        distribuido
+        libremente de varias formas.</li>
+      <li> <b>Software: </b>Son todos los programas y aplicaciones que están guardadas en un disco duro, CD-ROM o
+        disquetes.</li>
+      <li><b>Solaris:</b> Es un Sistema Operativo de tipo Unix desarrollado por Sun Microsyistemas desde 1992 como
+        sucesor
+        de
+        SunOs.</li>
+      <li><b>Traductor: </b>Es un programa que convierte mediante una traducción un lenguaje fuente a un lenguaje
+        objeto,
+        sin
+        que por ello varíe la semántica del código traducido, ya que tan
+        solo cambia su representación.</li>
+      <li><b>Unix:</b> Es una familia de Sistemas Operativos tanto para ordenadores personales (PC) como para mainframes
+        (grandes ordenadores de muchos procesadores).</li>
+      <li><b>Windows 98: </b>Es un Sistema Operativo lanzado por Microsoft en 1998, como sucesor de Windows 95.</li>
+    </ol>
+    <!--AQUI DEBO CONTINUAR-->
+    </p>
+    <br>
+    <h3 id="Partes">Partes de un sistema operativo </h3>
+    <p>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+            Kernel
+          </button>
+        </h2>
+        <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Un software que constituye una parte fundamental del sistema. Podríamos decir que
+            es el corazón del propio sistema, y de ahí su nombre. Se define como la parte que se ejecuta en modo
+            privilegiado o modo núcleo y que es el principal responsable a la hora de arrancar el propio sistema,
+            proporcionar un control de nivel básico sobre todos los componentes hardware del ordenador y cuyas funciones
+            principales son leer y escribir datos en memoria, procesar órdenes, interpretar datos, decidir qué programar
+            podrá hacer uso de un determinado recurso y durante cuánto tiempo, etc.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+            Controlador del dispositivo
+          </button>
+        </h2>
+        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Software encargado de permitir que el sistema interactúe con cualquier periférico.
+            Aunque no siempre es necesario para el uso de un nuevo hardware, su uso es recomendado para evitar
+            problemas, mejorar la seguridad y la experiencia de usuario.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+            Interfaz del usuario
+          </button>
+        </h2>
+        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Es la parte que permite al usuario interaccionar con el ordenador. Esta interfaz
+            puede ser gráfica, proporcionando un escritorio, ventanas y componentes gráficos para una interacción más
+            intuitiva, o bien puede ser a través de una línea de comandos.
+          </div>
+        </div>
+      </div>
+      </p>
+      <br>
+      <a id="Partes1"></a>
+      <div id="Tabla">
+        <h3>Partes de gestión de un sistema operativo</h3>
+        <table class="comparativo">
+          <tr>
+            <th>Gestión de Proceso</th>
+            <td>Un proceso es simplemente, un programa en ejecución que necesita recursos para realizar su tarea:
+              tiempo de CPU, memoria, archivos y dispositivos de E/S. </td>
+          </tr>
+          <tr>
+            <th>Gestión de Memoria Principal</th>
+            <td>La memoria es una gran tabla de palabras o bytes que se referencia cada una mediante una dirección
+              única. </td>
+          </tr>
+          <tr>
+            <th>Gestión de almacenamiento secundario</th>
+            <td>Un sistema de almacenamiento secundario es necesario, ya que la memoria principal es volátil y además
+              muy pequeña para almacenar todos los programas y datos. También es necesario mantener los datos que no
+              convenga mantener en la memoria principal. </td>
+          </tr>
+          <tr>
+            <th>El sistema de Entrada/Salida</th>
+            <td>Consiste en un sistema de almacenamiento temporal (caché), una interfaz de manejadores de dispositivos y
+              otra para dispositivos concretos. El sistema operativo debe gestionar el almacenamiento temporal de E/S y
+              servir las interrupciones de los dispositivos de E/S. </td>
+          </tr>
+          <tr>
+            <th>Sistema de archivos</th>
+            <td>Los archivos son colecciones de información relacionada, definidas por sus creadores. Éstos almacenan
+              programas y datos tales como imágenes, textos, información de bases de datos, etc. </td>
+          </tr>
+        </table>
+
+        <br><br>
+        <h2 id="PC">Sistemas operativos para ordenadores y dispositivos móviles y sus principales características
+        </h2>
+        <br>
+        <!--Tarjeta 2-->
+        <div class="contenido-texto">
+          <p>
+          <h3>Ordenadores</h3>
+          <ul class="viñetas">
+            <li><b>Windows.-</b> Su sistema de seguridad es de última generación, su interfaz de usuario permite un uso
+              conveniente independientemente del dispositivo en el que lo estés utilizando. </li>
+            <li><b>Ubuntu.-</b> Su función de código abierto es lo suficientemente atractiva como para atraer a muchos
+              usuarios. Pero también compensa la calidad al proporcionar una interfaz robusta y características de
+              seguridad que son demasiado difíciles de transmitir. </li>
+            <li><b> OS.-</b> El mayor logro de Mac es lo dinámico que parecen en el aspecto y el diseño de su interfaz.
+            </li>
+            <li><b>Solaris.-</b> Permite la escalabilidad, la interoperabilidad, la gestión de datos y la seguridad que
+              son fundamentales para las empresas que necesitan software operativo de alta gama. </li>
+          </ul>
+          <div class="contenido-img">
+            <img src="img/sistemasopera.jpg" alt="" style="width:300px">
+          </div>
+          <h3>Dispositivos móviles</h3>
+          <ul class="viñetas">
+            <li><b>Symbian OS.-</b> De código abierto, en 2010 vuelve a Nokia.
+            <li><b>Windows Mobile/Phone.-</b> Específico para smartphones y basado en Windows CE 5.2.
+            <li><b>iOS.-</b> Construido para iPhone, soporta 3 funcionalidades teléfono con cámara, iPod e internet.
+            <li><b>Android.-</b> Sistema operativo (basado en Linux), entorno de ejecución basado en Java, librerías de
+              bajo
+              y medio nivel.
+            <li><b>Linux en dispositivos móviles.-</b> Código abierto y gratuito; escalable, fiable, robusto y seguro,
+              adaptable a múltiples arquitecturas, requisitos hardware reducidos.
+          </ul>
+          </p>
+        </div>
+        <br><br>
+        <h2 id="Categorias" style="text-align: center;">Categorías de los sistemas operativos y su clasificación</h2>
+        <div class="contenido-textoo">
+          <p>
+            <b>Sistemas Operativos por su Estructura</b> <br>
+            Está compuesto por una serie de componentes con funciones bien definidas.
+            <br><b>Sistemas Operativos por sus Servicios</b> <br>
+            <i>Cliente Servidor:</i> Sistema operativo reciente que puede ser ejecutado en la mayoría de las
+            computadoras. Su objetivo es establecer la comunicación entre los clientes y servidores.<br>
+            <b>Sistemas Operativos por su Forma de Procesamiento</b> <br>
+            <i>Secuencia por Lotes:</i> Es la ejecución de una lista de comandos del sistema operativo uno tras otro sin
+            intervención del usuario. <br>
+            <i>Tiempo Real:</i> Procesa las instrucciones recibidas al instante, y una vez que han sido procesadas
+            muestra el resultado.
+            </ul>
+          </p>
+        </div>
+        <br><br>
+        <h2 id="Investigacion" style="text-align: center;">Investigación donde funciones principales de sistemas
+          operativos actuales</h2>
+        <div class="contenido-texto">
+          <p>
+            Actualmente, contamos con diversos sistemas operativos, cumplen la misma función la cual es ejecutarnos<img
+              src="img/windowsss.jpg" align="right" style="width:220px;">
+            alguna tarea según nuestros requerimientos, pero con distintas maneras de hacerlo.
+            Primeramente, tenemos el sistema operativo más popular, el cual es <b>Windows</b>. Sus funciones principales
+            son que nos permite correr y ejecutar diversos programas, han mejorado el software lo cual lo hace más
+            flexible y abierto, también han añadido mejor soporte para diversas acciones cómo por ejemplo abrir algún
+            archivo.<br>
+            <hr>
+            Otro de los mejores sistemas operativos en el mundo es el <b>iOS</b>, el cual es para celulares inteligentes
+            marca
+            Apple.<br>
+            Una de sus funciones es primeramente la compatibilidad con todas las versiones de dispositivos móviles,
+            posteriormente otra función es la <i>realidad aumentada</i> esto es que múltiples dispositivos visualicen
+            los mismos elementos en tres dimensiones desde diferentes perspectivas a través de la cámara.
+            <img src="img/iOS.jpg" align="left" style="width:220px;">Una más de sus funciones es la aplicación de fotos,
+            que esta es capaz de distinguir entre las imágenes como
+            deportes, viajes, comida, etc. Siendo de esta manera una de las mejores cámaras en los dispositivos móviles
+            del mercado.
+            También cuenta con la función de su asistente virtual, llamada Siri, y con ella se les permite a los
+            usuarios realizar acciones muy específicas dentro de aplicaciones de terceros. Otra función que tiene este
+            sistema operativo, que se considera importante, ya que tiene que ver con la salud, es una aplicación que se
+            llama “Tiempo en pantalla”, y fue diseñada para reducir la adicción al teléfono móvil. <br>
+            <hr>
+            Otro ejemplo de un sistema operativo actual es <b>Linux</b>,el cual es un software libre, y es el que
+            capacita a<img src="img/Linuxx.webp" align="right" style="width:220px;">
+            las aplicaciones y al operador del ordenador para acceder a los dispositivos y poder ejecutar las funciones
+            deseadas.
+            Una de las funciones que tiene Linux es la capacidad de poder ejecutar varios programas a la vez, también
+            cuenta con sistema multiusuario lo cual significa que permite tener varios usuarios a la vez que accedan
+            a aplicaciones y recursos del sistema.
+            Linux es el sistema más flexible y por lo tanto más eficiente al navegar.<br>
+            <hr>
+            <img src="img/Android1.jpg" align="left" style="width:180px;"> <b>Android</b> es otro sistema operativo
+            móvil y muy usado actualmente, fue desarrollado por Google, basado en Linux y es de código abierto.
+            También cuenta con sus propias funciones, por ejemplo, que le permite a sus usuarios establecer más sus
+            gustos con los widgets.
+            Una función más con la que cuenta este sistema operativo es que se pueden pasar aplicaciones a la tarjeta
+            microSD y así liberar más almacenamiento. De igual manera, una función muy interesante es que se pueden
+            grabar las llamadas.
+          </p>
+        </div>
+      </div>
+      <div id="Conclusion" class="contenido">
+        <br><br>
+        <div class="contenido-texto">
+          <p>
+          <h3>Conclusión general</h3><br>
+          Nos queda claro que existen diversos sistemas operativos para cada uno de nuestros dispositivos móviles o
+          fijos, ésto debido a las diferentes necesidades de las personas y sus respectivos puntos de vista.
+          Es muy probable que los requerimientos, costos y habilidades de algún sistema operativo se adapten a tus
+          deseos o tus posibilidades económicas.<br>
+          Se asume que un Sistema Operativo no es más que una herramienta la cual es sumamente útil para nuestro día a
+          día, también se sabe que la tecnología avanza a pasos agigantados y nosotros los humanos no nos podemos quedar
+          atrás.<br> Todas las personas en éste mundo hemos estado cerca de un Sistema Operativo aunque sea de manera
+          indirecta, a continuación se enlistan los más comunes en su versión para móviles:
+          <ul class="viñetas">
+            <li>
+              Blackberry
+            </li>
+            <li>
+              Nokia
+            </li>
+            <li>
+              Android
+            </li>
+            <li>
+              iOS
+            </li>
+          </ul>
+          Se espera que se hayan aclarado todas y cada una de las dudas que este tema puede generar, se abarcaron
+          diversas áreas tratando de explicar cada detalle y dando ejemplos que se creen pertinentes.
+          </p>
+        </div>
+      </div>      </div>      </div>
+      <br><br>
+      <footer class="footer">
+        <h2>Fuentes:</h2>
+        <ul class="viñetas">
+          <li>
+            Valdés, B. (2021). Componentes de un sistema operativo | Sus funciones. Obtenido de Administración de Redes: 
+            <a href="https://www.administracionderedes.com/componentes-de-un-sistema-operativo/">https://www.administracionderedes.com/componentes-de-un-sistema-operativo/</a>
+          </li>
+          <li>
+            Corrales, J. A. (2021, 12 febrero). Interfaz de usuario o UI: ¿qué es y cuáles son sus características? Rock Content - ES. Recuperado 24 de enero de 2022, de 
+            <a href="https://rockcontent.com/es/blog/interfaz-de-usuario/ ">https://rockcontent.com/es/blog/interfaz-de-usuario/ </a>
+          </li>
+          <li>
+            Operativo, S. (10 de agosto de 2016). TIPOS Y CLASIFICACIÓN DE SISTEMAS OPERATIVOS. Obtenido de WordPress: 
+            <a href="https://jose7331.wordpress.com/2016/08/10/tipos-y-clasificacion-de-sistemas-operativos/ ">https://jose7331.wordpress.com/2016/08/10/tipos-y-clasificacion-de-sistemas-operativos/  </a>
+          </li>
+          <li>
+            MiClassTec. (20 de abril de 2020). Sistemas Operativos UNIX, LINUX, MAC y DOS. Obtenido de YouTube:
+            <a href=" https://www.youtube.com/watch?v=UciVBLxCiGw"> https://www.youtube.com/watch?v=UciVBLxCiGw</a>
+          </li>
+          <li>
+            SIstema Operativo Monousuario. (2017, 16 agosto). Monografias.com. Recuperado 24 de enero de 2022, de 
+            <a href="https://www.monografias.com/docs114/sistema-operativo-monousuario/sistema-operativo-monousuario#:%7E:text=Un%20sistema%20operativo%20monousuario%20puede,que%20el%20software%20pierde%20utilidad.">https://www.monografias.com/docs114/sistema-operativo-monousuario/sistema-operativo-monousuario#:%7E:text=Un%20sistema%20operativo%20monousuario%20puede,que%20el%20software%20pierde%20utilidad.</a>
+          </li>
+          <li>
+            Applets Java. (2021, 12 noviembre). Manual Web. Recuperado 24 de enero de 2022, de
+            <a href="https://www.manualweb.net/java/applets-java/"> https://www.manualweb.net/java/applets-java/</a>
+          </li>
+          <li>
+            Unidad 5: Gestion de la Memoria - Sistemas Operativos. (s. f.). SO. Recuperado 24 de enero de 2022, de 
+            <a href="https://sites.google.com/site/fesaos13/unidad-5-gestion-de-la-memoria">https://sites.google.com/site/fesaos13/unidad-5-gestion-de-la-memoria</a>
+          </li>
+          <li>
+            Meneses, E. (2019, 23 abril). Principales funciones de un sistema operativo. Gluppi. Recuperado 24 de enero de 2022, de 
+            <a href="https://gluppi.com/principales-funciones-de-un-sistema-operativo/">https://gluppi.com/principales-funciones-de-un-sistema-operativo/</a>
+          </li>
+        </ul>
+      </footer>
+
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+.contenido-texto{
+    padding: 3% 5%;
+    border: solid gray 2px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 5px #757575; 
+    box-shadow: 0px 0px 15px 5px #757575;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "texto-central texto-central"
+                         "texto-lateral1 imagen-lateral1"
+                         "texto-bajo texto-bajo";
+}
+.contenido-texto2{
+    padding: 3% 5%;
+    border: solid gray 2px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 5px #757575; 
+    box-shadow: 0px 0px 15px 5px #757575;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "texto-central texto-central"
+                         "texto-lateral1 imagen-lateral1"
+                         "imagen-lateral2 texto-lateral2"
+                         "texto-lateral3 imagen-lateral3"
+                         "imagen-lateral4 texto-lateral4"
+                         "texto-bajo texto-bajo";
+}
+
+.contenido-img-lateral0{
+    max-width: 100%;
+    border: solid 2px dimgray;
+ }
+
+.contenido-img-lateral{
+   max-width: 100%;
+}
+
+.texto-central{
+    grid-area: texto-central;
+    width: 100%;
+}
+/*-------------------*/
+.texto-lateral1{
+    grid-area: texto-lateral1;
+    padding: 10% 5%;
+    align-items: center;
+}
+
+.imagen-lateral1{
+    grid-area: imagen-lateral1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*-------------------*/
+
+.texto-lateral2{
+    grid-area: texto-lateral2;
+    padding: 10% 5%;
+    align-items: center;
+}
+
+.imagen-lateral2{
+    grid-area: imagen-lateral2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*-------------------*/
+
+.texto-lateral3{
+    grid-area: texto-lateral3;
+    padding: 10% 5%;
+    align-items: center;
+}
+
+.imagen-lateral3{
+    grid-area: imagen-lateral3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*-------------------*/
+
+.texto-lateral4{
+    grid-area: texto-lateral4;
+    padding: 10% 5%;
+    align-items: center;
+}
+
+.imagen-lateral4{
+    grid-area: imagen-lateral4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*-------------------*/
+
+
+.pie-de-imagen{
+    font-size: 12px;
+    font-style: italic;
+    float: bottom;
+}
+
+.texto-bajo{
+    grid-area: texto-bajo;
+    width: 100%;
+}
+

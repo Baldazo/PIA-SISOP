@@ -1,0 +1,650 @@
+/*Fuentes*/
+@font-face {
+  font-family: "Cormorant";
+  src: url("Fonts/Cormorant-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: Medium;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Fonts/Raleway-Light.ttf") format("truetype");
+  font-weight: Medium;
+}
+
+/*Paleta de colores*/
+:root {
+  --Barra: rgba(0, 0, 0, 0.712);
+  --Fondo: #e9e9e9;
+  --Seleccion: rgba(124, 122, 122, 0.322);
+  --Colorfuente: #333;
+  --PiedePagina: rgb(177, 177, 177);
+}
+
+/*--Ajuste adaptativo---*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  /*1rem =10px*/
+  font-family: Roboto, Times, serif;
+  /*valores default para toda la pagina*/
+  background: #380b66;
+}
+
+/*logo-titulo*/
+header {
+  font-family: Roboto, Times, serif;
+  padding-bottom: 2rem;
+}
+
+.head-bg {
+  background: #380b66;
+  background-image: radial-gradient(circle at bottom left,
+      rgba(255, 0, 242, 0.45),
+      transparent 50%),
+    radial-gradient(circle at top left, rgba(38, 4, 39, 0.5), transparent 50%),
+    radial-gradient(circle at bottom right,
+      rgba(0, 47, 255, 0.5),
+      transparent 50%),
+    radial-gradient(circle at top right, rgba(1, 4, 45, 0.5), transparent 50%);
+  padding-top: 2rem;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.img-logo {
+  width: 40%;
+}
+
+/*Contenido principal o texto */
+.contenedor {
+  min-height: calc(100vh - 200px - 150px);
+  /*ajuste de footer*/
+  width: 85%;
+  max-width: 850px;
+  color: var(--Colorfuente);
+  margin: 0 auto;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  background: rgb(245, 242, 238);
+  padding: 20px 45px;
+  border-radius: 10px;
+}
+
+main p {
+  text-align: justify;
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  /*sangria*/
+}
+
+.main-bg {
+  margin-top: -16px;
+  padding-top: 2.5rem;
+  background: #380b66;
+  background-image: radial-gradient(circle at top left,
+      rgba(196, 0, 186, 0.55),
+      transparent 8%),
+    radial-gradient(circle at top right, rgba(1, 36, 194, 0.6), transparent 8%);
+}
+
+.main-bg-1 {
+  margin-top: -16px;
+  padding-top: 2.5rem;
+  background: #380b66;
+  background-image: radial-gradient(circle at top left,
+      rgba(196, 0, 186, 0.55),
+      transparent 23%),
+    radial-gradient(circle at top right, rgba(1, 36, 194, 0.6), transparent 23%);
+}
+
+.main-bg-p {
+  margin-top: -16px;
+  padding-top: 2.5rem;
+  background: #380b66;
+  background-image: radial-gradient(circle at top left,
+      rgba(196, 0, 186, 0.55),
+      transparent 25%),
+    radial-gradient(circle at top right, rgba(1, 36, 194, 0.6), transparent 25%);
+}
+
+.main-bg-2 {
+  margin-top: -16px;
+  padding-top: 2.5rem;
+  background: #380b66;
+  background-image: radial-gradient(circle at top left,
+      rgba(196, 0, 186, 0.55),
+      transparent 33%),
+    radial-gradient(circle at top right, rgba(1, 36, 194, 0.6), transparent 33%);
+}
+
+/*---------Menu desplegable ------
+
+/*Estilos generales*/
+.nav {
+  background: var(--Barra);
+  margin-top: 0;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.nav li ul {
+  position: absolute;
+  /*position absolute*/
+  display: none;
+}
+
+.menu-principal {
+  margin-top: 0;
+}
+
+.menu-principal li>a {
+  min-width: 10rem;
+  color: white;
+  font-family: Roboto, Georgia, serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 5rem;
+  /* Altura de barra o enlace y Separacion entre personales y tareas*/
+}
+
+.menu-principal>li {
+  display: inline-block;
+}
+
+.menu-principal li a:hover {
+  background: var(--Seleccion);
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  /*trasicion de cambio de color de boton*/
+}
+
+/*Segundo nivel*/
+/*Hace aparecer el sub menu al posarse en las opciones del menu principal*/
+.menu-principal li:hover ul {
+  display: block;
+}
+
+.menu-principal .Tareas:hover .subtareas {
+  /*Hace aparecer el sub menu al posarse en las opciones del menu principal*/
+  display: flex;
+}
+
+.submenu {
+  display: block;
+  max-width: 30.3rem;
+}
+
+.submenu li a {
+  width: 25rem;
+  padding: 1rem 2.5rem;
+}
+
+.submenu>li {
+  background: var(--Barra);
+  padding: 1rem 0 0 0;
+}
+
+.subtareas {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 56rem;
+  flex-wrap: wrap;
+  background: var(--Barra);
+}
+
+.subtareas li a {
+  width: 12rem;
+  padding: 1rem 1rem;
+}
+
+.subtareas>li {
+  padding: 1rem 0 0 0;
+}
+
+/*Animacion contenido*/
+.animado {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrar {
+  animation: mostrar 1s;
+}
+
+@keyframes mostrar {
+  0% {
+    transform: translateX(60px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Pie de Pagina- Botones de desplazamiento*/
+
+.botones a {
+  width: 4%;
+  display: inline-block;
+  margin: 1rem;
+  filter: invert(1);
+}
+
+.bt-ac a {
+  width: 4%;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.im-ac {
+  width: 90%;
+}
+
+.footer-personales a {
+  visibility: hidden;
+}
+
+/*Ajuste de imagenes*/
+
+/*INDEX*/
+.int-h2 {
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 27%;
+}
+
+.bt-abajo {
+  text-align: center;
+  margin-bottom: 10rem;
+  margin-top: 8rem;
+}
+
+.bt-abajo a {
+  text-decoration: none;
+}
+
+.mar-s {
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+.img-abajo {
+  width: 6%;
+}
+
+.img-orb {
+  width: 6%;
+  margin-left: 2rem;
+  filter: invert(1);
+}
+
+.img-up {
+  width: 6%;
+  rotate: 180deg;
+}
+
+.marg-cont {
+  margin-bottom: 4rem;
+}
+
+/*Fin INDEX*/
+.img-cabecera img {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  max-width: 95%;
+}
+
+.imagenes1 {
+  margin-right: 15px;
+  width: 40%;
+  border-radius: 10px;
+  float: left;
+}
+
+.imagenes2 {
+  margin-left: 15px;
+  width: 40%;
+  border-radius: 10px;
+  float: right;
+}
+
+.img-v1 {
+  margin-left: 15px;
+  height: 300px;
+  border-radius: 10px;
+  float: right;
+}
+
+.img-v2 {
+  margin-right: 15px;
+  height: 300px;
+  border-radius: 10px;
+  float: left;
+}
+
+/*Ajuste de imagenes Biografia*/
+.ImgCenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.imgIzq {
+  margin-left: auto;
+  margin-right: 15px;
+  width: 36%;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.img-its {
+  margin-left: auto;
+  margin-right: 15px;
+  height: 25rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.imgInter {
+  margin-left: auto;
+  margin-right: 15px;
+  max-height: 35rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.parrafo {
+  margin-top: 50px;
+}
+
+.esp {
+  margin-top: 80px;
+}
+
+/*Titulos de tareas*/
+
+.index {
+  text-align: center;
+}
+
+h2 {
+  line-height: 4.9rem;
+  margin-top: 0;
+}
+
+/*Subtitulo 1*/
+
+h3 {
+  font-size: 2.9rem;
+}
+
+/*subtitulo 2*/
+
+h4 {
+  font-size: 2.3rem;
+  color: #484747;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+/*Listas*/
+.listas-index li {
+  text-align: justify;
+
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  list-style: none;
+}
+
+.listas-index li>a {
+  text-decoration: none;
+  color: var(--Colorfuente);
+}
+
+/*INDEX*/
+.p-index {
+  text-align: justify;
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+}
+
+/*Portada*/
+.portada {
+  min-height: 100vh;
+  background: #380b66;
+  font-family: Roboto, Times, serif;
+  background-image: radial-gradient(circle at bottom left,
+      rgba(255, 0, 242, 0.45),
+      transparent 50%),
+    radial-gradient(circle at top left, rgba(38, 4, 39, 0.5), transparent 50%),
+    radial-gradient(circle at bottom right,
+      rgba(0, 47, 255, 0.5),
+      transparent 50%),
+    radial-gradient(circle at top right, rgba(1, 4, 45, 0.5), transparent 50%);
+}
+
+.Contenedor-Portada {
+  min-height: calc(98vh - 90px);
+  /*importante*/
+  position: relative;
+}
+
+.main {
+  display: none;
+}
+
+.bt-cont {
+  width: 10rem;
+  height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton-portada {
+  color: white;
+  background-color: var(--Barra);
+  width: 10rem;
+  height: 5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton-portada label {
+  padding: 1.5rem 0.95rem;
+}
+
+.bt-tx {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+#show,
+#hide {
+  display: none;
+}
+
+input#show:checked~div#content {
+  display: block;
+}
+
+input#hide:checked~div#content {
+  display: none;
+}
+
+input#show:checked~div#Portada {
+  display: none;
+}
+
+.barra {
+  background: var(--Barra);
+  /* max-height: 39.7px;*/
+  max-height: 2%;
+}
+
+.grid-barra {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 100%;
+}
+
+.parrafo-barra p {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: auto;
+}
+
+.p-fecha {
+  text-align: center;
+}
+
+.Orb {
+  display: inline-block;
+  max-width: 10rem;
+}
+
+.Orb img {
+  width: 26%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.logo-es {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uanl {
+  width: 15%;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.fime {
+  width: 15%;
+  float: right;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  max-width: 63%;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-right: 10rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 37rem 5rem;
+}
+
+.Fondo-Logo {
+  background: url(../imagenes/Windows-t1.png);
+  background-size: 97%;
+}
+
+.Fondo-Logo img {
+  width: 97%;
+}
+
+#logo-animacion {
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  transition: opacity 1s ease-in;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0%;
+  }
+
+  45% {
+    opacity: 45%;
+  }
+
+  55% {
+    opacity: 55%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.Texto-Portada {
+  font-size: 20pt;
+  color: white;
+}
+
+.Texto-Portada h2 {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.so {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  font-family: Raleway;
+  width: 92%;
+}
+
+.Nombres {
+  font-size: 11pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: 16px;
+  padding:.8% 0;
+}
+
+.mat {
+  width: 30rem;
+}
+
+.car {
+  width: 12rem;
+}

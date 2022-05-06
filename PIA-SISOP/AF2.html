@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad Fundamental 2</title>
+  <linkk rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="main-menu">
+    <div class="main-menu-form">
+      <div class="main-menu-btn"><i class="fa fa-bars"></i></div>
+    </div>
+    <div class="main-menu-content">
+      <!-- main logo -->
+      <div class="main-menu-logo">
+        <h2>¿A donde quieres ir?</h2>
+      </div>
+      <!-- navigation -->
+      <ul class="main-menu-nav">
+        <li>
+          <a href="index.html" class="orange">
+            <i class="fa fa-home fa-fw"></i>&nbsp; Inicio</a>
+        </li>
+        <li>
+          <a href="Windows1.html" class="red">
+            <i class="fa fa-users fa-fw front"></i>&nbsp; Puntos importantes
+            de Windows</a>
+        </li>
+        <li>
+          <a href="AF1.html" class="yellow">
+            <i class="fa fa-book fa-fw front"></i>&nbsp; Arquitectura&nbsp;<b>AF1</b></a>
+        </li>
+        <li>
+          <a href="AF2.html" class="green">
+            <i class="fa fa-folder fa-fw"></i>&nbsp; Multitarea&nbsp;<b>AF2</b></a>
+        </li>
+        <li>
+          <a href="AF3.html" class="purple">
+            <i class="fa fa-envelope fa-fw"></i>&nbsp; Almacenaje,
+            Memoria&nbsp;<b>AF3</b></a>
+        </li>
+        <li>
+          <a href="AF4.html" class="red">
+            <i class="fa fa-users fa-fw"></i>&nbsp; Redes y Seguridad&nbsp;<b>AF4</b></a>
+        </li>
+      </ul>
+      <a href="#" class="main-menu-close">
+        <i class="fa fa-close"></i>&nbsp; Cerrar menú</a>
+    </div>
+  </div>
+  <div class="contededor">
+    <header class="header">
+      <div class="menu">
+        <nav>
+          <a href="#Intro">Introducción</a>
+          <a href="#Concurrencia">Concurrencia</a>
+          <a href="#Tipos">Tipos</a>
+          <a href="#Modelos">Modelos</a>
+          <a href="#Ventajas">Ventajas</a>
+          <a href="#Tiipos">Tipos de procesos</a>
+          <a href="#Interacciones">Interacciones</a>
+          <a href="#Mapa">Mapa Conceptual</a>
+        </nav>
+        <nav>
+          <a href="#Conclusion">Conclusión</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!--Aquí comienza el desarrollo-->
+  <div class="contenido">
+    <h1 class="titulo">Multitarea y Control de concurrencia</h1>
+    <br><br>
+    <div class="contenido-texto" id="Intro">
+      <p>
+      <h1>Introducción</h1>
+      Los sistemas de bases de datos, según el número de usuarios que pueden utilizarlos de forma concurrente,
+      concurrencia se refiere a la habilidad de distintas partes de un programa, algoritmo, o problema de ser ejecutado
+      en desorden o en orden parcial, sin afectar el resultado final. Se clasifican en sistemas monousuario y
+      multiusuario. Varios usuarios pueden usar un mismo equipo a la vez gracias a la multiprogramación: el computador
+      puede procesar al mismo tiempo varias transacciones Si el equipo tiene varias CPU, es posible el procesamiento
+      simultáneo (paralelo) de transacciones Si sólo hay una CPU, el SO de multiprogramación reparte el tiempo de CPU
+      entre las transacciones: ejecución concurrente intercalada modelo que supondremos.
+      </p>
+    </div>
+  </div>
+
+  <!--Contenido 2-->
+  <div class="contenido2" id="Concurrencia">
+    <h1>¿Que es la concurrencia?</h1>
+    <div class="alineacionizq">
+      <p>
+        Se define como la capacidad de activar múltiples procesos a la vez.<img align="right"
+          src="img/Concurrencia1.jpg" style="width:300px; padding: 20px;"> Se dice que varios procesos son concurrentes
+        o paralelos cuando son procesados al mismo tiempo, es decir, que para ejecutar uno de ellos no hace falta que se
+        haya ejecutado otro.<br>Un sin número de modelos matemáticos han sido desarrollados para cálculos de la
+        concurrencia en general incluyendo redes de Petri, procesos Calculi, el modelo máquina de accesos aleatorios en
+        paralelo, el Modelo Actor y el Lenguaje Reo. <br>
+        En el caso de los sistemas multiprocesador, esta ejecución simultánea podría conseguirse completamente, ya que
+        podremos asignarle un proceso distinto a cada uno de los procesadores para realizar su respectiva ejecución. En
+        caso de tener un solo procesador se producirá un intercalado de las instrucciones de ambos procesos, de manera
+        que se tendrá la sensación de que existe un paralelismo en el sistema.
+      </p>
+    </div>
+    <br>
+    <div class="contenido" id="Tipos">
+      <table class="comparativo">
+        <tr>
+          <th colspan="2" style="font-size:30px;">Tipos de Concurrencia</th>
+        </tr>
+        <tr>
+          <td colspan="2"><img style="width:600px;" src="img/tiposconcurr.png"></td>
+        </tr>
+        <tr>
+          <th>Real/Paralelismo</th>
+          <th>Aparente, simulada o seudoparalelismo</th>
+        </tr>
+        <tr>
+          <td style="padding:20px; text-align: justify;">Se alternan varios procesos en un mismo procesador, y se pueden
+            encontrar más procesos que procesadores. Por ende, los procesos se multiplican en el tiempo.</td>
+          <td style="padding:20px; text-align: justify;">Se produce una ejecución en paralelo, y cada proceso se ejecuta
+            en un mismo procesador. También se denomina paralelismo.</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <div class="contenido" id="Modelos">
+      <div class="contenido-texto">
+        <h3>Modelos de programación concurrente</h3><br>
+        <p><b>Modelo de actores</b><br>
+          El modelo de actores facilita el diseño de sistemas basados en concurrencia. Se fundamenta en pequeñas
+          entidades denominadas actores que se envían mensajes y se comportan de una forma definida frente a la
+          recepción de cada uno.<br>
+          La construcción de actores sirve para encargar labores, lo que es eficaz para aliviar responsabilidades y
+          diseñar un óptimo modelo de actores, intentando que cada uno tenga el menor número de competencias viable, de
+          tal forma que quede claro qué mensajes debería procesar cada actor, cómo tienen que reaccionar a los mismos y
+          cómo tienen que manejar errores.<br>
+          <b>Características:</b>
+        <ul class="viñetas">
+          <li>Toda la computación es efectuada dentro del actor.</li>
+          <li> Los actores solo pueden comunicarse por mensajes.</li>
+        </ul>
+        <b>En respuesta a un mensaje recibido, un actor puede:</b>
+        <ul class="viñetas">
+          <li>Cambiar su estado o comportamiento. </li>
+          <li>Crear un número infinito de actores hijos.</li>
+          <li>Enviar mensajes a otros actores.</li>
+          <li>Facilidades al momento de escalar un sistema.</li>
+          <li>Es tolerante al fallo de entregas.</li>
+          <li>Los mensajes no comparten estado.</li>
+        </ul>
+        <b>Akka model</b><br>
+        Akka es un conjunto de herramientas para construir sistemas concurrentes y distribuidos, en el cual los actores
+        de Akka usan hilos de Java internamente.<br>
+        Los actores de Akka en Java deben extender la clase Untyped e implementar el método onReceive, método donde los
+        actores reciben los mensajes y los manejan según corresponda.<br>
+        Akka proporciona bibliotecas de código abierto para diseñar sistemas escalables y resistentes que sean capaces
+        de enfocarse en las necesidades comerciales que requieren un comportamiento confiable, de tolerancia a fallas y
+        de alto rendimiento.<br>
+
+        <b>Thread model</b><br>
+        Thread Model permite implementar el que un determinado trozo de código Java, pueda ser ejecutado
+        concurrentemente por diferentes contextos de programación. El modelo de hilos no tiene su propio espacio de
+        memoria, sino que acceden todos al mismo espacio de memoria común, por lo que será importante su sincronización
+        cuando tengamos varios hilos accediendo a los mismos objetos. Además, tienen la posibilidad de compartir con
+        otros threads: código, datos y archivos abiertos.<br>
+        La ventaja de usar el thread model es que muchas operaciones son llevadas a cabo de forma paralela y, de esta
+        forma, los eventos asociados a cada actividad pueden ser manejados inmediatamente.<br>
+        Cuando un thread altera un elemento de memoria de segmento de código, todos los demás threads lo ven, y son más
+        económicos de crear y cambiar de contexto.
+        </p>
+      </div>
+    </div>
+    <br><br>
+    <div class="contenido-texto" id="Ventajas">
+      <div class="comparativo">
+        <h3>Ventajas de la ejecución de la concurrencia</h3><br>
+        <table>
+          <tr>
+            <th>Acelera la ejecución de cálculos</th>
+            <td>División de cálculos en procesos ejecutados en paralelo.<br> Ejemplos: <i>Simulaciones, Mercado
+                eléctrico, Evaluación de carteras financieras.</i> </td>
+          </tr>
+          <tr>
+            <th>Facilita la programación </th>
+            <td>Diversas tareas se pueden estructurar en procesos separados. <br>Servidor Web: Un proceso encargado de
+              atender a cada petición. </td>
+          </tr>
+          <tr>
+            <th>Mejora el aprovechamiento de la CPU </th>
+            <td>Se aprovechan las fases de Entrada/Salida de una aplicación para procesamiento de otras. </td>
+          </tr>
+          <tr>
+            <th>Mejora la interactividad de las aplicaciones</th>
+            <td>Se pueden separar las tareas de procesamiento de las tareas de atención de usuarios. <br>Ejemplo:<i>
+                Impresión y edición.</i> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br id="Tiipos">
+    <h3>Tipos de procesos concurrentes</h3>
+    <br>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <b>Independientes</b>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Estos se ejecutan sin requerir la ayuda o cooperación de otros procesos. Un claro
+            ejemplo de procesos independientes son los diferentes shells que se ejecutan de forma simultánea en un
+            sistema.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <b>Cooperantes</b>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Son aquellos que están diseñados para trabajar conjuntamente en alguna actividad,
+            para lo que deben ser capaces de comunicarse e interactuar entre ellos.<br>
+            No importa si son cooperantes o independientes, siempre hay interacción entre ellos, se les conoce por el
+            mismo nombre, pero con diferente manera de interactuar.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br id="Interacciones">
+    <h3>Interacciones entre procesos dentro de la concurrencia</h3><br>
+    <div class="contenido-textoo">
+      <p>
+        En ambos tipos de procesos (independientes y cooperantes), puede producirse una serie de interacciones
+        entre ellos y pueden ser de dos tipos:
+      <ol class="viñetaletra">
+        <li><b>Interacción motivada porque los procesos comparten o compiten por el acceso a recursos físicos o lógicos.
+            Esta situación aparece en los distintos tipos de procesos anteriormente comentados.</b><br> Por ejemplo, dos
+          procesos
+          totalmente independientes pueden competir por el acceso al disco.
+          En este caso el sistema operativo deberá encargarse de que los dos procesos accedan ordenadamente sin que se
+          cree ningún conflicto.</li>
+        <li><b>Interacción motivada porque los procesos se comunican y sincronizan entre sí para alcanzar un objetivo
+            común.</b><br>
+          Por ejemplo, los procesos compiladores y ensambladores descritos anteriormente son dos procesos que deben
+          comunicarse y sincronizarse entre ellos con el fin de producir código en lenguaje máquina.</li>
+      </ol>
+      </p>
+    </div>
+    <!--AQUÍ DEBO CONTINUAR-->
+    <br><br>
+    <div class="contenido" id="Mapa">
+      <div class="contenido-texto">
+        <h2 id="Sistemas">Material gráfico sobre la Concurrencia</h2>
+        <img src="img/cuadrosinop.png" style="width: 1000 px; height:1000px;">
+      </div>
+    </div>
+    <br>
+    <!--Tarjeta 2-->
+    <div class="contenido-texto" id="Conclusion">
+      <p>
+      <h1>Conclusión general</h1><img align="left" src="img/conclusion.jpg" style="width:250px; padding: 15px;">
+      Un sistema operativo "multitarea" tiene sus funciones debido a que va alternando tareas o procesos que el usuario
+      le solicita, de manera muy rápida, aplicando así la concurrencia aparente o bien, el pseudoparalelismo.<br>
+      La mayoría de los sistemas operativos de hoy en día utilizan la multitarea, ya que esta se ha vuelto
+      imprescindible para los usuarios; prácticamente, al usar cualquier dispositivo móvil o computadora estamos
+      requiriendo que el sistema operativo realice operaciones multitarea, por ejemplo, usar Facebook mientras hablamos
+      por WhatsApp, o tomar una clase en MS teams mientras hacemos apuntes en algún bloc de notas. </p>
+    </div>
+  </div>
+  <footer class="footer">
+    <h2>Fuentes:</h2>
+    <!--
+
+
+
+
+
+-->
+    <ul class="viñetas">
+      <li>2.2 Estados y transiciones de los procesos - Materia SisOperativos. (s. f.).
+        IntroduccionALosSistemasOperativos. Recuperado 7 de febrero de 2022, de
+        <a
+          href="https://sites.google.com/site/materiasisoperativo/unidad-2-administrador-del-proceso-y-del-procesador/2-2-estados-y-transiciones-de-los-procesos">https://sites.google.com/site/materiasisoperativo/unidad-2-administrador-del-proceso-y-del-procesador/2-2-estados-y-transiciones-de-los-procesos</a>
+      </li>
+      <li>Concurrencia de procesos | Sistemas Operativos | ConsultorÃ¬a InformÃ¡tica WebProgramacion. (s. f.). Web
+        Programación. Recuperado 7 de febrero de 2022, de
+        <a
+          href="https://webprogramacion.com/43/sistemas-operativos/concurrencia-de-procesos.aspx">https://webprogramacion.com/43/sistemas-operativos/concurrencia-de-procesos.aspx</a>
+      </li>
+      <li>SISTEMAS OPERATIVOS, PROCESOS CONCURRENTES-Unidad III. (s. f.). Publicaciones Estudiantiles. Recuperado 7 de
+        febrero de 2022, de
+        <a
+          href="https://www.aiu.edu/spanish/publications/student/spanish/180-207/SISTEMAS-OPERATIVOS-PROCESOS-CONCURRENTES-Unidad-III.html">https://www.aiu.edu/spanish/publications/student/spanish/180-207/SISTEMAS-OPERATIVOS-PROCESOS-CONCURRENTES-Unidad-III.html</a>
+      </li>
+      <li>Transiciones de Estado. (s. f.). SO. Recuperado 7 de febrero de 2022, de
+        <a
+          href="http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro26/transiciones_de_estado.html#transiciones">http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro26/transiciones_de_estado.html#transiciones</a>
+      </li>
+      <li>U. (2018, 16 diciembre). Concurrencia y Secuencialidad (Sistemas Operativos). StudentPlace. Recuperado 7 de
+        febrero de 2022, de
+        <a
+          href=" https://studentplace98.blogspot.com/2018/09/concurrencia-y-secuencialidad-sistemas.html#:%7E:text=Concurrencia%3A%20es%20una%20propiedad%20de,que%20se%20haya%20ejecutado%20otro.">
+          https://studentplace98.blogspot.com/2018/09/concurrencia-y-secuencialidad-sistemas.html#:%7E:text=Concurrencia%3A%20es%20una%20propiedad%20de,que%20se%20haya%20ejecutado%20otro.</a>
+      </li>
+      <li>Universidad Carlos III. (2015). Sistemas Operativos (N.o 1).
+        <a
+          href="http://ocw.uc3m.es/ingenieria-informatica/sistemas-operativos/material-de-clase-1/mt_t3_l6.pdf">http://ocw.uc3m.es/ingenieria-informatica/sistemas-operativos/material-de-clase-1/mt_t3_l6.pdf</a>
+      </li>
+
+    </ul>
+
+  </footer>
+  </div>
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

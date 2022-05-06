@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad Fundamental 3</title>
+  <linkk rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="main-menu">
+    <div class="main-menu-form">
+      <div class="main-menu-btn"><i class="fa fa-bars"></i></div>
+    </div>
+    <div class="main-menu-content">
+      <!-- main logo -->
+      <div class="main-menu-logo">
+        <h2>¿A donde quieres ir?</h2>
+      </div>
+      <!-- navigation -->
+      <ul class="main-menu-nav">
+        <li>
+          <a href="index.html" class="orange">
+            <i class="fa fa-home fa-fw"></i>&nbsp; Inicio</a>
+        </li>
+        <li>
+          <a href="Windows1.html" class="red">
+            <i class="fa fa-users fa-fw front"></i>&nbsp; Puntos importantes
+            de Windows</a>
+        </li>
+        <li>
+          <a href="AF1.html" class="yellow">
+            <i class="fa fa-book fa-fw front"></i>&nbsp; Arquitectura&nbsp;<b>AF1</b></a>
+        </li>
+        <li>
+          <a href="AF2.html" class="green">
+            <i class="fa fa-folder fa-fw"></i>&nbsp; Multitarea&nbsp;<b>AF2</b></a>
+        </li>
+        <li>
+          <a href="AF3.html" class="purple">
+            <i class="fa fa-envelope fa-fw"></i>&nbsp; Almacenaje,
+            Memoria&nbsp;<b>AF3</b></a>
+        </li>
+        <li>
+          <a href="AF4.html" class="red">
+            <i class="fa fa-users fa-fw"></i>&nbsp; Redes y Seguridad&nbsp;<b>AF4</b></a>
+        </li>
+      </ul>
+      <a href="#" class="main-menu-close">
+        <i class="fa fa-close"></i>&nbsp; Cerrar menú</a>
+    </div>
+  </div>
+  <div class="contededor">
+    <header class="header">
+      <div class="menu">
+        <nav>
+          <a href="#Intro">Introducción</a>
+          <a href="#Tipos">Tipos de memorias y sistemas de archivos</a>
+          <a href="#red">SO de red</a>
+          <a href="#Memo">Memoria</a>
+          <a href="#Espacios">Espacios</a>
+          <a href="#Problemas">Problemas de memoria</a>
+        </nav>
+        <nav>
+        <a href="#Conclusion">Conclusión</a>
+      </nav>
+      </div>
+    </header>
+  </div>
+  <!--Aquí comienza el desarrollo-->
+  <div class="contenido">
+    <h1 class="titulo">Almacenaje, memoria y archivos</h1>
+    <br><br>
+    <div class="contenido-textoo" id="Intro">
+      <p>
+      <h1>Introducción</h1>
+      Esta actividad se abordará todo lo relacionado con el almacenaje, la memoria y los archivos. Siempre se cree que
+      almacenamiento y memoria son términos que significan lo mismo, sin embargo, esto es una creencia errónea.<br>
+      <b>Memoria</b> se refiere al componente que se encuentra dentro de la computadora, el cual permite acceder a los
+      datos almacenados en el dispositivo a corto plazo. Asimismo, la velocidad y el rendimiento del sistema dependen de
+      la cantidad de memoria instalada en el computador. <br>
+      <b>El almacenamiento</b> es el componente de la computadora que permite almacenar y acceder a los datos a largo
+      plazo. Se da en forma de unidad en estado sólido o en disco duro. Permite acceder y almacenar aplicaciones,
+      sistema operativo y archivos por un tiempo indefinido.
+      </p>
+    </div>
+  </div>
+
+  <!--Contenido 2-->
+  <div class="contenido2">
+    <h2 id="Tipos">¿Qué tipos de memoria y sistemas de archivos manejan y cómo operan?</h2>
+    <br><br>
+    <div class="alineacionizq">
+      <h4>Tipos de memorias</h4>
+      <p>
+      <ul class="viñetas">
+        <li><b>Linux,</b> tiene dos espacios de memoria: el espacio de memoria del usuario y el espacio de memoria del
+          kernel. </li>
+        <li>El sistema operativo <b>DOS</b> cuenta con memoria convencional, memoria extendida, memoria paginada y
+          memoria alta. </li>
+        <li>Los ordenadores con sistema operativo <b>Windows, Ubuntu o Linux</b> disponen de esta clase de memoria, que
+          es virtual. Swap se puede traducir por “espacio de intercambio”. Es bastante parecida a la memoria caché, pero
+          a ella recurre exclusivamente el sistema operativo, y no el resto de los componentes del ordenador.</li>
+        <li>La gestión de memoria en <b>Windows</b> es de memoria virtual con paginación, es decir, se encarga del
+          intercambio de información entre la memoria y el Disco Duro.</li>
+      </ul>
+      <br>
+      <h4>Sistema de archivos</h4>
+      <p>
+      <ul class="viñetas">
+        Un <b>sistema de archivos</b> es el sistema de almacenamiento de un dispositivo de memoria, que estructura y
+        organiza la escritura, búsqueda, lectura, almacenamiento, edición y eliminación de archivos de una manera
+        concreta.<br>
+        <b>Windows,</b> utiliza el sistema de archivos NTFS. <br>
+        NFTS es un sistema de archivos de Windows NT incluido en las versiones desde Windows 2000 hasta Windows 10. Está
+        basado en el sistema de archivos HPFS de IBM/Microsoft usado en el sistema operativo OS/2, y también tiene
+        ciertas influencias del formato de archivos HFS diseñado por Apple.<br><br>
+        <b>Linux</b> ofrece distintos sistemas de archivos como: Ext, Ext2, Ext3, Ext4, swap, ReiserFS, XFS, JFS, UFS,
+        ISO9660, FAT, FAT32 o NTFS.<br>
+        <li style="padding-left:20px;"><b>ext2:</b> Hasta hace poco era el sistema estándar de Linux. Tiene una
+          fragmentación muy baja, aunque es
+          algo lento manejando archivos de gran tamaño. Fue la continuación del sistema de ficheros ext, implementado en
+          1992 e integrado en Linux 0.96. <br></li>
+        <li style="padding-left:20px;"><b>ext3:</b> Es la versión mejorada de ext2, con previsión de pérdida de
+          datos por fallos del disco o
+          apagones. <br></li>
+        <li style="padding-left:20px;"><b>ext4:</b> Es la última versión de la familia de sistemas de ficheros ext.
+          Sus principales ventajas radican
+          en su eficiencia y en la ampliación de los límites de tamaño de los ficheros, ahora de hasta 16TB.<br></li>
+        <li style="padding-left:20px;"><b>ReiserFS:</b> Es el sistema de ficheros de última generación para Linux.
+          Organiza los ficheros de tal modo
+          que se agilizan mucho las operaciones con estos. El problema de ser tan actual es que muchas herramientas lo
+          soportan.<br></li>
+        <li style="padding-left:20px;"><b>swap:</b> Es el sistema de ficheros para la partición de intercambio de
+          Linux. Todos los sistemas Linux
+          necesitan una partición de este tipo para cargar los programas y no saturar la memoria RAM cuando se excede su
+          capacidad.<br><br></li>
+        <b>Mac</b> cuenta con diversos sistemas de archivos, dentro de los cuales están los siguientes:<br>
+        <li style="padding-left:20px;"><b>Apple File System (APFS):</b> el sistema de archivos usado en macOS 10.13 o
+          posterior.
+          Es el sistema de archivos predeterminado para computadoras Mac con macOS 10.13 o posterior, posee un
+          encriptado
+          sólido, reparto de espacio, instantáneas, cambio de tamaño de directorio rápido y fundamentos de sistema de
+          archivos mejorados.<br></li>
+        <li style="padding-left:20px;"><b>MS-DOS (FAT) y ExFAT:</b> sistemas de archivo compatibles con Windows.<br>
+        </li>
+        <li style="padding-left:20px;"><b>MS-DOS (FAT):</b> se utiliza para volúmenes de Windows de hasta 32 GB.<br>
+        </li>
+        <li style="padding-left:20px;"><b>ExFAT:</b> se utiliza para volúmenes de Windows de más de 32 GB.</li>
+      </ul>
+      </p>
+    </div>
+    <br>
+    <div class="contenido" id="red">
+      <div class="contenido-textoo">
+        <h3>Sistemas Operativos de red</h3>
+        <p>
+          <b>NFS (Network File System - Sistema de archivos de red).-</b> es un mecanismo para almacenar archivos en una
+          red. Es un sistema de archivos distribuido que permite a los usuarios acceder a los archivos y directorios
+          ubicados en sistemas remotos y tratar dichos archivos y directorios como si fueran locales.<br>
+          Un sistema operativo de red es una aplicación de software que funciona a modo de plataforma para mejorar tanto
+          el funcionamiento de un ordenador como el de varios ordenadores dentro de una misma red interconectada. De
+          este modo, un sistema operativo de red es capaz de posibilitar la comunicación entre ordenadores
+          pertenecientes a la misma red de equipos.<br><br>
+          <b>LANtastic de Artisoft</b> es un sistema operativo de red punto a punto para DOS, Windows y OS/2. Su
+          principal particularidad reside precisamente en sus redes punto a punto, lo cual quiere decir que la
+          comunicación únicamente entre dos equipos. <br><br>
+          <b>LAN Manager de Microsoft</b>, es un sistema operativo desarrollado por Microsoft e IBM, ejecutado bajo OS/2
+          que conecta equipos con DOS, OS-2 y UNIX. Además de agrupar los servidores de archivos de dominios, es apta
+          para equipos de macrocomputadoras y cuenta con la particularidad de ofrecerse tanto para servidor dedicado
+          como no dedicado.<br><br>
+          <b>Windows Server</b>, es un sistema operativo lanzado por Microsoft y está desarrollado en C, C++ y asembler.
+          Es un sistema multiproceso y que admite varios usuarios. Sin embargo, es más utilizado por empresas ya que el
+          costo de la licencia es un tanto elevado.
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="contenido-texto" id="Memo">
+      <h3>Importancia de la administración de memoria</h3>
+      <p>La memoria es uno de los elementos más importantes para que todo funcione correctamente, sin ella nuestros
+        dispositivos electrónicos tal vez ni siquiera podrían arrancar; tal es la importancia que este componente
+        eléctrico tiene en la estructura de los aparatos electrónicos.<br>
+        La gestión de la memoria principal de una computadora es una tarea de suma importancia para el funcionamiento de
+        esta. La calidad de la gestión de la memoria es crucial para las prestaciones del sistema. El recolector de
+        basura es la asignación y liberación automática de los recursos de memoria para un programa.
+      </p>
+    </div>
+    <br>
+    <a  id="Espacios"></a>
+    <h3>Control de los espacios disponibles y ocupados en la memoria</h3>
+    <p><b>Su funcionamiento consiste en:</b><br>
+      Inicialmente toda la memoria(a excepción de la partición del S.O. se encuentra disponible para los procesos,
+      similando un gran hueco.<br>
+      Cuando llega un proceso se guarda en un hueco que esté libre y el espacio que se dejó libre representa un hueco
+      más.<br>
+      Cada una de las zonas de la memoria que se encuentren ocupadas representan una partición.<br>
+      Una vez que el proceso ya ha terminado libera su zona de la memmoria y genera un hueco, mismo que se fusiona con
+      los que lo rodean.<br>
+      Finalmente se conserva una tabla donde se almacenan todas las partes de memoria utilizadas y también las libres,
+      así como la cola de los procesos que están esperando un hueco.</p>
+    <br>
+    <a  id="Problemas"></a>
+    <h3>Problemas frecuentes en la administración de memoria</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Reubicación
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Como la memoria disponible estará compartida por varios procesos, el programador
+            no puede conocer mientras desarrolla qué área de memoria se asignará al proceso que está programando. Cuando
+            se ejecute el programa, el SO asignará un bloque de memoria libre, que podrá ser diferente en cada
+            ejecución.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Protección
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">No resulta conveniente que un proceso pueda acceder al espacio de memoria asignado
+            a otro proceso.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Compartición
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">En ocasiones algunos procesos necesitan intercambiar datos. Estos procesos pueden
+            querer compartir un área de memoria a la que ambos tengan acceso.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+            Organización lógica
+          </button>
+        </h2>
+        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Normalmente en un sistema informático la memoria principal está organizada de
+            forma lineal como una secuencia de posiciones de memoria. Del mismo modo la memoria secundaria se puede
+            ver como una secuencia de bloques. El sistema gestor de memoria debe permitir organizar lógicamente partes
+            de la memoria para acercarse a la visión del programador.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+            Organización física
+          </button>
+        </h2>
+        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Físicamente la memoria está organizada en dos espacios claramente
+            diferenciados:<br>
+            <ul class="viñetas">
+              <li>Memoria principal rápida, volátil y escasa</li>
+              <li>Memoria secundaria lenta, persistente y abundante</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--Tarjeta 2-->
+    <div class="contenido-textoo" id="Conclusion">
+      <p>
+      <h1>Conclusión</h1><br>
+      En esta actividad se explicó lo que es un sistema de archivos, un componente que controla cómo se almacenan y
+      recuperan los datos. Además de ser el encargado de administrar y facilitar el uso de las memorias periféricas, ya
+      sean principales, secundarias o terciarias. También se abordó el tipo de sistema de archivos con el que cuentan
+      algunos sistemas operativos de PC y móviles.<br>
+      Se vio también que un sistema operativo de red permite la interconexión de ordenadores para poder acceder a los
+      servicios y recursos, hardware y software, creando redes de computadoras. Y algunos ejemplos de estos sistemas
+      operativos, tales como LANtastic de Artisoft y Windows Server.
+
+      </p>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <footer class="footer">
+    <h2>Fuentes:</h2>
+    <ul class="viñetas">
+      <li>8.2.2. Tipos de sistemas de ficheros en Linux. (s. f.). Tema 8. Linux. Sistema de Ficheros. Recuperado 22 de
+        marzo de 2022, de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+          href="http://mural.uv.es/oshuso/822_tipos_de_sistemas_de_ficheros_en_linux.html#:%7E:text=Linux%20soporta%20gran%20variedad%20de,utilizado%20para%20compartir%20recursos%20entre">http://mural.uv.es/oshuso/822_tipos_de_sistemas_de_ficheros_en_linux.html#:%7E:text=Linux%20soporta%20gran%20variedad%20de,utilizado%20para%20compartir%20recursos%20entre</a>
+      </li>
+      <li>Cantú, O. M. (s. f.). Gestion de memoria en windows. SlideShare. Recuperado 22 de marzo de 2022, de
+        <a href="https://es.slideshare.net/valdomagana/gestion-de-memoria-en-windows">
+          https://es.slideshare.net/valdomagana/gestion-de-memoria-en-windows</a>
+      </li>
+      <li>Cómo comprobar el sistema de archivos (FAT, FAT32, . . . etc) de la unidad de disco duro. | Sony América
+        Latina. (2013, 22 agosto). SONY. Recuperado 22 de marzo de 2022, de
+        <a
+          href="https://www.sony-latin.com/es/electronics/support/articles/00015779">https://www.sony-latin.com/es/electronics/support/articles/00015779</a>
+      </li>
+      <li>La diferencia entre memoria y almacenamiento en computadoras - Kingston Technology. (s. f.). Kingston
+        Technology Company. Recuperado 22 de marzo de 2022, de
+        <a
+          href="https://www.kingston.com/unitedstates/latam/community/articledetail/articleid/29689#:%7E:text=Mientras%20la%20memoria%20se%20refiere,s%C3%B3lido%20o%20un%20disco%20duro.">https://www.kingston.com/unitedstates/latam/community/articledetail/articleid/29689#:%7E:text=Mientras%20la%20memoria%20se%20refiere,s%C3%B3lido%20o%20un%20disco%20duro.</a>
+      </li>
+      <li>¿En qué sistemas es más importante la gestión de memoria? (s. f.). ¿En qué sistemas es más importante la
+        gestión de memoria? Recuperado 22 de marzo de 2022, de
+        <a
+          href="https://todosloshechos.es/en-que-sistemas-es-mas-importante-la-gestion-de-memoria">https://todosloshechos.es/en-que-sistemas-es-mas-importante-la-gestion-de-memoria</a>
+      </li>
+      <li>Formatos de sistema de archivos disponibles en Utilidad de Discos en la Mac. (s. f.). Apple Support.
+        Recuperado 22 de marzo de 2022, de
+        <a
+          href="https://support.apple.com/es-mx/guide/disk-utility/dsku19ed921c/mac">https://support.apple.com/es-mx/guide/disk-utility/dsku19ed921c/mac</a>
+      </li>
+      <li>Gestión de la memoria. (s. f.). Plone site. Recuperado 22 de marzo de 2022, de
+        <a
+          href="https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud3/na9#:%7E:text=Entre%20los%20problemas%20que%20debe,al%20proceso%20que%20est%C3%A1%20programando.">https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud3/na9#:%7E:text=Entre%20los%20problemas%20que%20debe,al%20proceso%20que%20est%C3%A1%20programando.</a>
+      </li>
+      <li>Info, I. T. (2022, 16 marzo). ¿Qué es la memoria RAM virtual en Android y debería importarle? ES Atsit.
+        Recuperado 22 de marzo de 2022, de
+        <a
+          href=" https://br.atsit.in/es/?p=182436#:%7E:text=Dentro%20de%20Android%2C%20hay%203,o%20eMMC%20en%20dispositivos%20econ%C3%B3micos.">
+          https://br.atsit.in/es/?p=182436#:%7E:text=Dentro%20de%20Android%2C%20hay%203,o%20eMMC%20en%20dispositivos%20econ%C3%B3micos.</a>
+      </li>
+    </ul>
+
+  </footer>
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

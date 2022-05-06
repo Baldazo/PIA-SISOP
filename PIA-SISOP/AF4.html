@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad Fundamental 3</title>
+  <linkk rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="main-menu">
+    <div class="main-menu-form">
+      <div class="main-menu-btn"><i class="fa fa-bars"></i></div>
+    </div>
+    <div class="main-menu-content">
+      <!-- main logo -->
+      <div class="main-menu-logo">
+        <h2>¿A donde quieres ir?</h2>
+      </div>
+      <!-- navigation -->
+      <ul class="main-menu-nav">
+        <li>
+          <a href="index.html" class="orange">
+            <i class="fa fa-home fa-fw"></i>&nbsp; Inicio</a>
+        </li>
+        <li>
+          <a href="Windows1.html" class="red">
+            <i class="fa fa-users fa-fw front"></i>&nbsp; Puntos importantes
+            de Windows</a>
+        </li>
+        <li>
+          <a href="AF1.html" class="yellow">
+            <i class="fa fa-book fa-fw front"></i>&nbsp; Arquitectura&nbsp;<b>AF1</b></a>
+        </li>
+        <li>
+          <a href="AF2.html" class="green">
+            <i class="fa fa-folder fa-fw"></i>&nbsp; Multitarea&nbsp;<b>AF2</b></a>
+        </li>
+        <li>
+          <a href="AF3.html" class="purple">
+            <i class="fa fa-envelope fa-fw"></i>&nbsp; Almacenaje,
+            Memoria&nbsp;<b>AF3</b></a>
+        </li>
+        <li>
+          <a href="AF4.html" class="red">
+            <i class="fa fa-users fa-fw"></i>&nbsp; Redes y Seguridad&nbsp;<b>AF4</b></a>
+        </li>
+      </ul>
+      <a href="#" class="main-menu-close">
+        <i class="fa fa-close"></i>&nbsp; Cerrar menú</a>
+    </div>
+  </div>
+  <div class="contededor">
+    <header class="header">
+      <div class="menu">
+        <nav>
+          <a href="#">Punto1</a>
+          <a href="#">Punto2</a>
+          <a href="#">Punto3</a>
+          <a href="#">Punto4</a>
+          <a href="#">Punto5</a>
+          <a href="#">Punto6</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!--Aquí comienza el desarrollo-->
+  <div class="contenido">
+    <h1 class="titulo">Actividad Fundamental 3</h1>
+    <br><br>
+    <div class="contenido-texto">
+      <p>
+      <h1>Concurrencia</h1><br>
+      Es la capacidad de un programa para correr actividades o tareas de manera simultanea. <br>
+      Los procesos de una computadora son concurrentes si existen simultáneamente. Los procesos concurrentes
+      pueden funcionar en forma totalmente independiente unos de otros, o pueden ser asíncronos, lo cual
+      significa
+      que en ocasiones requieren cierta sincronización o cooperación.
+      <br><br>
+      <div class="contenido-img">
+        <img src="img/conc.png" alt="">
+      </div>
+      </p><br>
+    </div>
+  </div>
+
+  <!--Contenido 2-->
+  <div class="contenido2">
+    <h2 id="Sistemas">Sistemas de sincronización entre hilos sobre Windows</h2>
+    <br><br>
+    <div class="alineacionizq">
+      <h3>Secciones Críticas</h3>
+      <p>
+        Las secciones criticas son ampliamente conocidas por los desarrolladores de windows en lenguajes
+        como C y C++, estas proveen el acceso exclusivo a una porción de código ubicada entre
+        "EnterCriticalSection" y "LeaveCriticalSection", aunque también a menudo causan dolores de cabeza
+        con los deadlocks producto tanto de olvidos en el código como de posibles fallos del mismo.
+        <br>
+      </p>
+    </div>
+    <div class="contenidoizq-img">
+      <img src="img/conc.png" alt="">
+    </div>
+    <br>
+    <h3>Semáforos</h3>
+    <p>Los semáforos limitan la ejecución simultánea de un código (procedimiento, línea de código, etc.) a
+      uno o más hilos en un momento dado. Un semáforo se puede compartir entre varias aplicaciones.
+    </p>
+    <br>
+    <h3>Mutex</h3>
+    <p>Un objeto mutex es un objeto de sincronización cuyo estado se establece en señalado cuando no es
+      propiedad de ningún subproceso y no señalado cuando sí lo es. Solo un subproceso a la vez puede
+      poseer un objeto mutex, cuyo nombre proviene del hecho de que es útil para coordinar el acceso
+      mutuamente excluyente a un recurso compartido. Por ejemplo, para evitar que dos subprocesos escriban
+      en la memoria compartida al mismo tiempo, cada subproceso espera la propiedad de un objeto mutex antes
+      de ejecutar el código que accede a la memoria. Después de escribir en la memoria compartida, el
+      subproceso libera el objeto mutex.</p>
+    <br>
+    <h3>Eventos</h3>
+    <p>Una de las herramientas más importantes que nos ofrece Microsoft en sus Sistemas Operativos Windows,
+      tanto de hogar como a nivel empresarial, es sin dudas el <b>visor de eventos</b> ya que desde esta
+      herramienta
+      tenemos acceso a todos los sucesos que han acontecido en el Sistema Operativo durante todo el tiempo de
+      actividad.</p>
+    <br>
+    <h3>SpinLocks</h3>
+    <p>
+      El bloqueo más común en el kernel de Linux es un bloqueo giratorio.Los spinlocks pueden mantenerse como
+      máximo
+      por un hilo ejecutable. Si un subproceso de ejecución intenta adquirir un bloqueo de giro que ya está
+      retenido,
+      el subproceso continuará haciendo un giro de bucle ocupado esperando que el bloqueo vuelva a estar
+      disponible.
+      Si el bloqueo no está en disputa, el hilo en ejecución que solicita el bloqueo puede obtenerlo
+      inmediatamente
+      y continuar la ejecución. En cualquier momento, un bloqueo de giro puede evitar que más de un hilo de
+      ejecución
+      entre en la sección crítica al mismo tiempo.
+      <br>
+      Un spinlock en disputa hace que el hilo solicitante gire mientras espera que el bloqueo vuelva a estar
+      disponible
+      (especialmente perdiendo el tiempo del procesador). Este comportamiento es el punto principal de un
+      spinlock.
+      <br><br>
+      Los controladores para Microsoft Windows XP y versiones posteriores de Windows pueden usar
+      <u>KeAcquireInStackQueuedSpinLock</u> y <u>KeReleaseInStackQueuedSpinLock</u> para adquirir y liberar el
+      bloqueo de giro como un bloqueo de giro en cola. Los bloqueos
+      de giro en cola proporcionan un mejor rendimiento que los bloqueos de giro ordinarios para bloqueos de
+      alta contención en
+      máquinas multiprocesador. Para obtener más información, consulte Bloqueos de giro en cola. Los
+      controladores para Windows
+      2000 pueden usar KeAcquireSpinLock y KeReleaseSpinLock para adquirir y liberar un bloqueo giratorio como
+      un bloqueo giratorio normal.
+    </p>
+    <br><br>
+    <h2 id="Sistemas">Sistemas de sincronización entre hilos sobre Windows</h2>
+    <br>
+    <!--Acordeón-->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the first item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+            filled with some actual content.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
+            a bit more representative of how this would look in a real-world application.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <h2 id="Sistemas">Sistemas de sincronización entre hilos sobre Windows</h2>
+    <br>
+    <!--Tarjeta 2-->
+    <div class="contenido-texto">
+      <p>
+      <h1>Concurrencia</h1><br>
+      Es la capacidad de un programa para correr actividades o tareas de manera simultanea. <br>
+      Los procesos de una computadora son concurrentes si existen simultáneamente. Los procesos concurrentes
+      pueden funcionar en forma totalmente independiente unos de otros, o pueden ser asíncronos, lo cual
+      significa
+      que en ocasiones requieren cierta sincronización o cooperación.
+      <br><br>
+      <div class="contenido-img">
+        <img src="img/conc.png" alt="">
+      </div>
+      </p><br>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

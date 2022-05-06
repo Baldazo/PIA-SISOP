@@ -1,0 +1,200 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Concurrencia</title>
+</head>
+<body>
+    <div class="contededor">
+        <header class="header">
+			<div class="menu">
+				<nav>
+					<a href="Windows1.html">Historia</a>
+					<a href="concurrencia.html">Concurrencia</a>
+					<a href="#">Ventajas</a>
+					<a href="">Seguridad</a>
+					<a href="">Acerca de..</a>
+				</nav>
+			</div>
+        </header>
+        <div class="contenido">
+            <h1 class="titulo">Concurrencia en Windows</h1>
+            <div class="contenido-img">
+                <img src="img/concurrencia.jpg" alt="">
+            </div>
+            <div class="contenido-texto">
+                <p><h1>Concurrencia</h1><br>
+					Es la capacidad de un programa para correr actividades o tareas de manera simultanea. <br>
+					Los procesos de una computadora son concurrentes si existen simultáneamente. Los procesos concurrentes 
+					pueden funcionar en forma totalmente independiente unos de otros, o pueden ser asíncronos, lo cual significa
+					 que en ocasiones requieren cierta sincronización o cooperación.
+					<br><br>
+                    <div class="contenido-img">
+                        <img src="img/conc.png" alt="">
+                    </div>
+				</p><br>
+            </div>
+            <br><br>
+            <h1>La concurrencia puede presentarse en tres contextos diferentes:</h1>
+        </div>
+        <div class="banner">
+            <ul class="slider">
+                <div class="fondo"></div>    
+                <li id="slide1">
+                    <div class="marco">
+                        <div class="img-ban">
+                            <img class="imban" src="img/procesos.png" alt="">
+                        </div>
+                        <div class="texto-ban">
+                            <h2><span>1</span> Varias aplicaciones</h2>
+                            <p>Para este caso se invento la multiprogramación, esto para permitir que el tiempo de procesador 
+                                de la máquina fuese compartido dinámicamente entre varios trabajos o aplicaciones activas. No 
+                                necesito tener abierto Word para poder escuchar musica ¿O si?, cada programa en este caso es 
+                                independiente del otro.</p>
+                        <br>
+                            <h3> Procesos</h3>
+                        <p>Al abrir el administrador de tareas podemos ver que cada programa utilizado se ejecuta como una tarea
+                             o proceso diferente, cada una trabajando al mismo tiempo de forma independiente.</p>
+                        </div>
+                    </div>
+                </li>
+                <!------------------------------------------->
+                <li id="slide2">
+                    <div class="marco">
+                        <div class="img-ban">
+                            <img class="imban" src="img/Inkedprocpc_LI.jpg" alt="">
+                        </div>
+                        <div class="texto-ban">
+                            <h2><span>2</span> Aplicaciones estructuradas</h2>
+					<p>Como ampliación de los principios del diseño modular y la programación estructurada, algunas 
+						aplicaciones pueden implementarse eficazmente como un conjunto de procesos concurrentes. Esto 
+						quiere decir, que existen programas que por lo regular para funcionar requieren ejecutar varias 
+						tareas a la vez o tener varios hilos de ejecución.</p>
+				<br>
+					<h3>Hilos</h3>
+				<p>Podemos apreciar que algunas tareas en ejecucion tienen sus propios hilos, que vendrían siendo subprocesos
+					 del programa principal.
+				</p>
+                        </div>
+                    </div>
+                </li>
+                <!------------------------------------------->
+                <li id="slide3">
+                    <div class="marco">
+                        <div class="img-ban">
+                            <img class="imban" src="img/procw.PNG" alt="">
+                        </div>
+                        <div class="texto-ban">
+                            <h2><span>3</span> Estructura del sistema operativo</h2>
+                            <p> 
+                                Un Sistema Operativo es básicamente un conjunto de programas que se ejecutan concurrentemente 
+                                para ofrecerte la mejor experiencia de trabajo. Si ponemos un ejemplo práctico podríamos mencionar 
+                                todos los servicios de Windows, desde el servicio de cola de impresión hasta el servicio de actualización 
+                                de Windows update, cada uno de estos son procesos que se ejecutan en segundo plano.</p>
+                        <br>
+                            <h3>Procesos de Windows</h3>
+                        <p>Si cerramos por error podemos causar un mal funcionamiento de Windows o inclusive dañarlo.
+                        </p>
+                        </div>
+                    </div>
+                </li>
+                <!------------------------------------------->
+            </ul>
+            <!--Menu slider-->
+            <ul class="menusld">
+                <li><a href="#slide1">1</a></li>
+                <li><a href="#slide2">2</a></li>
+                <li><a href="#slide3">3</a></li>
+            </ul>
+        </div>
+        <!--Contenido 2-->
+        <div class="contenido2">
+            <h2>Sistemas de sincronización entre hilos sobre Windows</h2>
+            <br>
+            <p>En windows podemos encontrar diferentes métodos para sincronizar hilos como lo pueden ser:</p>
+            <ul class="cont2-menu">
+                <br>
+                <li>Mutex</li>
+                <li>Semáforos</li>
+                <li>Secciones Crítica</li>
+                <li>Eventos</li>
+                <li>SpinLocks(En Drivers)</li>
+            </ul>
+            <br><br>
+            <h2>Secciones Críticas</h2>
+            <p>
+                Las secciones criticas son ampliamente conocidas por los desarrolladores de windows en lenguajes 
+                como C y C++, estas proveen el acceso exclusivo a una porción de código ubicada entre 
+                "EnterCriticalSection" y "LeaveCriticalSection", aunque también a menudo causan dolores de cabeza 
+                con los deadlocks producto tanto de olvidos en el código como de posibles fallos del mismo.
+                <br>
+            </p>
+            <br>
+            <h2>Semáforos</h2>
+            <p>Los semáforos limitan la ejecución simultánea de un código (procedimiento, línea de código, etc.) a 
+                uno o más hilos en un momento dado. Un semáforo se puede compartir entre varias aplicaciones.
+            </p>
+            <br>
+            <h2>Mutex</h2>
+            <p>Un objeto mutex es un objeto de sincronización cuyo estado se establece en señalado cuando no es 
+                propiedad de ningún subproceso y no señalado cuando sí lo es. Solo un subproceso a la vez puede 
+                poseer un objeto mutex, cuyo nombre proviene del hecho de que es útil para coordinar el acceso 
+                mutuamente excluyente a un recurso compartido. Por ejemplo, para evitar que dos subprocesos escriban 
+                en la memoria compartida al mismo tiempo, cada subproceso espera la propiedad de un objeto mutex antes 
+                de ejecutar el código que accede a la memoria. Después de escribir en la memoria compartida, el 
+                subproceso libera el objeto mutex.</p>
+                <br>
+                <h2>Eventos</h2>
+                <p>Una de las herramientas más importantes que nos ofrece Microsoft en sus Sistemas Operativos Windows, 
+                    tanto de hogar como a nivel empresarial, es sin dudas el <b>visor de eventos</b>  ya que desde esta herramienta 
+                    tenemos acceso a todos los sucesos que han acontecido en el Sistema Operativo durante todo el tiempo de 
+                    actividad.</p>
+                    <br>
+                <h2>SpinLocks</h2>
+                <p>
+                    El bloqueo más común en el kernel de Linux es un bloqueo giratorio.Los spinlocks pueden mantenerse como máximo 
+                    por un hilo ejecutable. Si un subproceso de ejecución intenta adquirir un bloqueo de giro que ya está retenido, 
+                    el subproceso continuará haciendo un giro de bucle ocupado esperando que el bloqueo vuelva a estar disponible.
+                    Si el bloqueo no está en disputa, el hilo en ejecución que solicita el bloqueo puede obtenerlo inmediatamente 
+                    y continuar la ejecución. En cualquier momento, un bloqueo de giro puede evitar que más de un hilo de ejecución 
+                    entre en la sección crítica al mismo tiempo.
+                    <br>
+                    Un spinlock en disputa hace que el hilo solicitante gire mientras espera que el bloqueo vuelva a estar disponible 
+                    (especialmente perdiendo el tiempo del procesador). Este comportamiento es el punto principal de un spinlock.
+                    <br><br>
+                    Los controladores para Microsoft Windows XP y versiones posteriores de Windows pueden usar
+                    <u>KeAcquireInStackQueuedSpinLock</u> y <u>KeReleaseInStackQueuedSpinLock</u>  para adquirir y liberar el bloqueo de giro como un bloqueo de giro en cola. Los bloqueos 
+                    de giro en cola proporcionan un mejor rendimiento que los bloqueos de giro ordinarios para bloqueos de alta contención en 
+                    máquinas multiprocesador. Para obtener más información, consulte Bloqueos de giro en cola. Los controladores para Windows 
+                    2000 pueden usar KeAcquireSpinLock y KeReleaseSpinLock para adquirir y liberar un bloqueo giratorio como un bloqueo giratorio normal. 
+                </p>
+                <br><br>
+                <hr>
+
+        </div>
+        <footer class="footer">
+            <h2>Fuentes:</h2>
+            <ul>
+                <li>
+                    <a href="https://docs.microsoft.com/en-us/windows/win32/sync/mutex-objects">https://docs.microsoft.com</a>
+                </li>
+                <li>
+                    <a href="http://codeinthehell.blogspot.com/2010/02/manejo-de-concurrencia-en-windows.html">
+                        http://codeinthehell.blogspot.com</a>
+                </li>
+                <li>
+                    <a href="https://ayuda.windev.es/es-ES/?3077013">https://ayuda.windev.es</a>
+                </li>
+                <li>
+                    <a href="https://www.solvetic.com/tutoriales/article/3392-como-abrir-usar-visor-eventos-windows-10/">https://www.solvetic.com</a>
+                </li>
+            </ul>
+            
+        </footer>
+
+    </div>
+
+</body>
+</html>
